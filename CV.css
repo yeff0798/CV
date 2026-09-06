@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  background-color: #f3f4f6;
+  font-family: Times New Roman, Helvetica, sans-serif; /* Tipografía limpia y estándar ATS */
+  line-height: 1.45;
+  color: #111827;
+}
+
+/* Contenedor principal: Simula formato hoja A4/Carta */
+.cv-Yeff2026 {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align-last: center;
+  padding: 48px;
+}
+
+/* ==========================================================================
+   BARRA DE ACCIONES (INTERFAZ WEB)
+   ========================================================================== */
+.action-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #1f2937;
+  color: #ffffff;
+  border: 1px solid #111827;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #374151;
+}
+
+/* ==========================================================================
+   DATOS PERSONALES
+   ========================================================================== */
+.cv-Yeff2026 {
+  border-bottom: 2px solid #111827;
+  padding-bottom: 14px;
+  margin-bottom: 22px;
+  justify-content: center;
+
+}
+
+.candidate-name {
+  margin: 0 0 6px 0;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  color: #111827;
+}
+
+.contacto {
+  margin: 0 0 4px 0;
+  font-size: 13px;
+  color: #374151;
+}
+
+.contacto a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   SECCIONES Y JERARQUÍA
+   ========================================================================== */
+.cv-section {
+  margin-bottom: 22px;
+}
+
+.section-title {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #d1d5db;
+  padding-bottom: 4px;
+  margin: 0 0 14px 0;
+  color: #1f2937;
+}
+
+.summary-text {
+  margin: 0;
+  font-size: 13px;
+  text-align: justify;
+}
+
+/* ==========================================================================
+   EXPERIENCIA / ITEMS ACADÉMICOS
+   ========================================================================== */
+.job-item {
+  margin-bottom: 16px;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.company-name {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: bold;
+  color: #111827;
+}
+
+.job-date {
+  font-size: 12.5px;
+  font-weight: bold;
+  color: #374151;
+}
+
+.job-sub {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12.5px;
+  color: #4b5563;
+  margin-bottom: 4px;
+}
+
+.sector-tag {
+  margin: 0 0 6px 0;
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.task-list {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 13px;
+}
+
+.task-list li {
+  margin-bottom: 4px;
+}
+
+/* ==========================================================================
+   ESTILOS DE IMPRESIÓN (Al generar PDF vía botón o Ctrl+P)
+   ========================================================================== */
+@media print {
+  body {
+    background-color: #ffffff;
+    padding: 0;
+  }
+
+  .cv-wrapper {
+    box-shadow: none;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .action-bar {
+    display: none !important;
+  }
+}
